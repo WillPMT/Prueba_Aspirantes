@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos, Accesorios Y Más</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /*Fondo Claro*/
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #cccccc;
+        }
+
+        h1 { font-size: 2.5rem; margin: 0; }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4CAF50; /*Color de los botones del menú*/
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover { background-color: #45a049; /* Efecto hover */ }
+
+        main {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1200px; /* Ancho máximo */
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section { margin-bottom: 20px; text-align: center; }
+
+        h2 { color: #4CAF50; /* Color de los títulos de secciones */ }
+
+        .galeria {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .producto {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .producto:hover { transform: scale(1.05); }  /* Efecto de hover */ 
+
+        .producto img {
+            width: 170px; /*Ancho de imagen*/
+            height: 220px; /*Alto de imagen*/
+            object-fit: cover; /*Mantener fijo el tamaño de la imagen*/
+            border-radius: 10px;
+        }
+
+        .volver-arriba {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .volver-arriba:hover { background-color: #45a049; }
+
+        footer {
+            background-color: #ffffff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid #cccccc;
+            margin-top: 20px;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 1024px) {  /*Tamaño para laptops*/
+            .producto {
+                width: 45%; 
+            }
+        }
+
+        @media (max-width: 780px) {  /*Tamaño para tablets*/
+            .producto {
+                width: 100%; 
+            }
+            h1 {
+                font-size: 2rem;  /*Tamaño de fuente más pequeño*/
+            }
+        }
+
+        @media (max-width: 340px) { 
+            nav a {
+                display: block;  /*Menú en celulares*/
+                margin: 10px 0;
+            }
+            h1 {
+                font-size: 1.5rem;  /*Tamaño de fuente más pequeño*/
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tienda de Videojuegos, Accesorios y Más</h1>
+        <nav>
+            <a href="#videojuegos">Videojuegos</a>
+            <a href="#audifonos">Audífonos</a>
+            <a href="#consolas">Consolas</a>
+            <a href="#controles">Controles</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--SECCION Videojuegos-->
+        <section id="videojuegos">
+            <h2>Venta de Videojuegos</h2>
+            <div class="galeria">
+                <div class="producto">
+                    <img src="imagenes/juego1.jpg" alt="Juego 1">
+                    <h3>HALO INFINITE</h3>
+                    <p>Precio: $1,350.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagenes/juego2.jpg" alt="Juego 2">
+                    <h3>DEAD SPACE Remake</h3>
+                    <p>Precio: $970.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagenes/juego3.jpg" alt="Juego 3">
+                    <h3>CASTLEVANIA Requiem</h3>
+                    <h3>Symphony of the Night</h3>
+                    <h3>Rondo of Blood</h3>
+                    <p>Precio: $3,000.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--SECCION Audifonos-->
+        <section id="audifonos">
+            <h2>Venta de Audífonos</h2>
+            <div class="galeria">
+                <div class="producto">
+                    <img src="imagenes/audifonos1.jpg" alt="Audífonos 1">
+                    <h3>Audífonos Gamer Micolindun Led Mic Azul</h3>
+                    <p>Precio: $499.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagenes/audifonos2.jpg" alt="Audífonos 2">
+                    <h3>Audífonos Gamer Alámbricos PDP Gaming LVL40 / Nintendo Switch / Rojo con azul</h3>
+                    <p>Precio: $840.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagenes/audifonos3.jpg" alt="Audífonos 3">
+                    <h3>Audífonos Gamer Alámbricos Zelda PDP Azul con Morado</h3>
+                    <p>Precio: $799.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+            </div>
+            <a href="#top" class="volver-arriba">Volver Arriba</a>
+        </section>
+
+        <!--SECCION Consolas-->
+        <section id="consolas">
+            <h2>Venta de Consolas</h2>
+            <div class="galeria">
+                <div class="producto">
+                    <img src="imagenes/consola1.jpg" alt="Consola 1">
+                    <h3>XBOX Series X</h3>
+                    <p>Precio: $9,799.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagenes/consola2.jpg" alt="Consola 2">
+                    <h3>Play Station 5</h3>
+                    <p>Precio: $11,999.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagenes/consola3.jpg" alt="Consola 3">
+                    <h3>Nintendo Switch</h3>
+                    <p>Precio: $5,199.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+            </div>
+            <a href="#top" class="volver-arriba">Volver Arriba</a>
+        </section>
+
+        <!--SECCION Controles-->
+        <section id="controles">
+            <h2>Venta de Controles</h2>
+            <div class="galeria">
+                <div class="producto">
+                    <img src="imagenes/control1.jpg" alt="Control 1">
+                    <h3>Control Inalámbrico Xbox Sky Cipher - Edición Limitada</h3>
+                    <p>Precio: $2,125.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+                
+                <div class="producto">
+                    <img src="imagenes/control2.jpg" alt="Control 2">
+                    <h3>Joystick Ps5 Inalámbrico Sony Playstation Dualsense</h3>
+                    <p>Precio: $1,299.00 MXN</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagenes/control3.jpg" alt="Control 3">
+                    <h3>Controles Inalámbricos Nintendo Switch Joy-Con Verde y Rosa</h3>
+                    <p>Precio: $1,850.00 MXN</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+                <a href="#top" class="volver-arriba">Volver Arriba</a>
+            </section>
